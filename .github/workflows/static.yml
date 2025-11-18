@@ -37,7 +37,7 @@ jobs:
         run: npm install
 
       - name: Build static content
-        run: npm run build
+        run: npm start
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
