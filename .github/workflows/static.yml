@@ -35,13 +35,7 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload the build output directory (adjust if needed)
-          path: './dist'
-
+        
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
